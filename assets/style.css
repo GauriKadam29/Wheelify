@@ -1,0 +1,2176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.contact {
+    display: flex;
+
+}
+.contact .email, .contact .phone{
+    display: flex;
+    margin: 0 20px;
+
+}
+.contact .email i, .contact .phone i{
+    margin-right: 10px;
+}
+.logbtn a{
+    margin: 0 20px;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid;
+    padding:5px 20px;
+    font-weight: bold;
+}
+nav{
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    padding: 0 220px;
+}
+nav img{
+    width: 250px;
+    height: 80px;
+}
+
+/* navbar */
+nav .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav .navbar a{
+    margin: 0 20px;
+    color: white;
+    font-weight: bold;
+}
+.search{
+    display: flex;
+    border: 1px solid white;
+    background-color: transparent;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+.search i{
+    color: white;
+    padding: 10px;
+}
+.search input{
+    border: none;
+    outline: none; 
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* home - section1 */
+.slide{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5) ), url(images/slide.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    text-align: center;
+    padding: 200px 300px;
+}
+.slide h1{
+    font-size: 70px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.slide .world h1{
+    color:#F4C201;
+}
+.slide h2{
+    color: white;
+    font-size: 30px;
+    padding-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.slide p{
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+    letter-spacing: 0.6px;
+}
+.btn{
+    display: flex;
+    padding-left: 200px;
+}
+.btn .learn{
+    border: 2px solid #F4C201;
+    border-radius: 50px;
+    color: black;
+    background-color: white;
+    padding: 20px 30px;
+    margin: 40px 20px;
+    transition: all 0.3s;
+}
+.btn .learn:hover{
+    background-color: #F4C201;
+}
+.btn .learn a{
+    color: black;
+    font-size: 25px;
+}
+.btn .learn i{
+    font-size: 25px;
+}
+
+/* home - section2 */
+.shiping{
+    height: 130vh;
+    position: relative;
+    z-index: 1;
+}
+.shiping .top{
+    height: 50%;
+    text-align: center;
+    padding-top: 50px;
+}
+.shiping .top h2{
+    padding-top: 40px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    display: inline-block;
+}
+/* .shiping .top h2::before,
+.shiping .top h2::after {
+    content: '';
+    position: absolute;
+    top: 75%;
+    width: 60px;
+    height: 2px;
+    background: black;  
+}
+.shiping .top h2::before {
+    left: -70px;
+}
+.shiping .top h2::after {
+    right: -70px;
+} */
+.shiping .top p{
+    font-size: 17px;
+    color: #525252;
+}
+.bottom{
+    height: 50%;
+    background-image: url(images/shiping-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shiping .transport{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px 100px;
+    position: absolute;
+    top: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 60px;
+}
+.transport > div{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.shiping .transport .transport1 .img{
+    width: 100%;
+    height: 50%;
+    background-image: url(images/img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+.shiping .transport .transport2 .img{
+    width: 100%;
+    height: 50%;
+    background-image: url(images/img-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+.shiping .transport .transport3 .img{
+    width: 100%;
+    height: 50%;
+    background-image: url(images/img-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s; 
+}
+.shiping .transport .transport1:hover .img, .shiping .transport .transport2:hover .img, .shiping .transport .transport3:hover .img{
+    transform: scale(1.1);
+    
+}
+.shiping .transport .transport1, .shiping .transport .transport2, .shiping .transport .transport3{
+    background-color: white;
+    
+}
+.shiping .transport .transport1 .content, .shiping .transport .transport2 .content, .shiping .transport .transport3 .content{
+    text-align: justify;
+    padding: 60px 30px;
+    
+}
+.shiping .transport .transport1 .content h3, .shiping .transport .transport2 .content h3, .shiping .transport .transport3 .content h3{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    position: relative;
+}
+/* .content h3::after{
+    content: '';
+    position: absolute;
+    top: 75%;
+    width: 60px;
+    height: 1.5px;
+    background: black; 
+}
+.content h3::after {
+    right: 260px;
+} */
+
+.shiping .transport .transport1 p, .transport2 p, .transport3 p{
+    font-size: 17px;
+    line-height: 1.6;
+}
+.shiping .transport a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #192538;
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    padding: 10px 0;
+    color: white; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+.shiping .transport .transport1:hover a, .shiping .transport .transport2:hover a, .shiping .transport .transport3:hover a{
+    color: #F4C201;
+    transition: all 0.3s;
+}
+.shiping .transport .transport1:hover h3, .shiping .transport .transport2:hover h3, .shiping .transport .transport3:hover h3{
+    color: #F4C201;
+    transition: all 0.3s;
+}
+
+/* home - section3 */
+.service{
+    background-color: #EBEEF0;
+}
+.service .track{
+    display: flex;
+    padding: 80px 150px;
+}
+.service .track .box1 .info1 h2{
+    position: relative;
+}
+.service .track .box1 .info1 h2::after{
+    content: '';
+    position: absolute;
+    top: 115%;
+    width: 60px;
+    height: 1.5px;
+    background: black; 
+    right: 510px;
+}
+.service .track .box1, .box2{
+    width: 700px;
+    height: 550px;
+    margin: 20px;
+}
+.service .track .box2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.service .track .box2 .card{
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 22px rgba(0, 0, 0, .25)
+}
+.service .track .box2 .card h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+}
+/* .card h3::after{
+    content: '';
+    position: absolute;
+    top: 119%;
+    width: 90px;
+    height: 1.5px;
+    background: black; 
+}
+.card h3::after {
+    right: 70px;
+} */
+.service .track .box2 .card p{
+    margin-top: 15px;
+    letter-spacing: 1.6px;
+}
+.service .track .box2 img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.service .track .box1 .info1 h2, .info3 form h2{
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15px;
+}
+.service .track .box1 .info1 p{
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
+}
+.service .track .box1 .info2{
+    display: flex;
+    margin: 5px 10px;
+    font-weight: bold;
+}
+.service .track .box1 .info2 p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    /* color: grey; */
+}
+.service .track .box1 .info2 i{
+    color: green;
+    margin-right: 20px;
+}
+.info3 form{
+    margin-top: 40px;
+}
+
+.info3 form input{
+    width: 250px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+}
+.info3 form button{
+    margin-left: 15px;
+    color: white;
+    background-color: #192538;
+    padding: 15px 25px;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+/* home - section4 */
+.choose .goods{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 0 200px;
+}
+.choose{
+    /* background-color: #FFFAE6; */
+    background-image: url(images/best-ser-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 90px 0;  
+}
+.choose .heading h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+/* .choose .heading h1::before,
+.choose .heading h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background: black;  
+}
+.heading h1::before {
+    left: 560px;
+}
+.heading h1::after {
+    right: 560px;
+} */
+.choose .heading p{
+    letter-spacing: 1.1px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.choose .goods .system{
+    line-height: 1.6;
+}
+.choose .goods .system ul li{
+    list-style-type: decimal;
+    font-size: 19px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.choose .goods .system img{
+    width: 300px;
+    height: 220px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: bounce 3s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100%, 20%, 50%, 80% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.choose .goods .system ul p{
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+
+
+/* home - section5 */
+.main {
+    height: 100vh;
+    background-image: linear-gradient(120deg,rgba(0, 0, 0, 0.737)  65%, rgba(0, 0, 0, 0) 25%), url(images/adv-bg.jpg);
+    position: relative;
+    position: sticky;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+.offer {
+    margin: 20px 300px;
+}
+
+.offer h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.offer h2 {
+    font-size: 30px;
+    color: #F4C201;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.offer h2::before,
+.offer h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 1px;
+    background: white;
+    
+}
+
+.offer h2::before {
+    left: -70px;
+}
+
+.offer h2::after {
+    right: -70px;
+}
+
+.benefits{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    display: inline;
+    padding: 20px 150px;
+    margin-left: 250px;
+    text-align: center;
+    /* background-color: gray; */
+    /* border: 1px solid; */
+    background-image: linear-gradient(to left, black, grey, black);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main .box{
+    width: 800px;
+    height: 450px;
+    margin: 50px 70px;
+    display: flex;
+}
+.main .box .box1 .shape{
+   display: flex;
+   position: relative;
+   align-items: center;
+   z-index: 1;
+   margin: 40px 30px;
+}
+.main .box .box1 .shape .shape1{
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: #F4C201;
+    position: absolute;
+    z-index: 1;
+
+}
+.main .box .box1 .shape .shape2{
+    width: 250px;
+    height: 80px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-color: #454646;
+    color: white;
+    margin-left: 70px;
+}
+.main .box .box1 .shape .shape2 i{
+    font-size: 30px;
+    padding-right: 5px;
+}
+.main .box .box1 .shape .shape1, .main .box .box1 .shape .shape2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* home - section6 */
+.pricing{
+    height: 100vh;
+    position: relative;
+}
+.pricing .upper{
+    height: 20%;
+    text-align: center;
+    margin: 90px;
+}
+.pricing .lower{
+    height: 80%;
+    background-image: url(images/price-bg.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pricing .upper h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 8px;
+}
+.pricing .upper p{
+    letter-spacing: 1.1px;
+    line-height: 1.3;
+}
+.purchase{
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 180px;
+    position: absolute;
+    top: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+.purchase .price{
+    width: 350px;
+    background-color: white;  
+    transition: all 0.5s;
+}
+.purchase .price:hover{
+    box-shadow: rgba(0, 0, 0, 0.70) 0px 5px 15px;
+}
+.purchase .price .first{
+    background-image: url(images/design.png);
+    height: 40%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+.purchase .price .second{
+    text-align: center;
+    
+}
+.purchase .price .second p{
+    margin: 25px 0;
+    font-size: 18px;
+}
+.purchase .price .second p span{
+    font-weight: bold;
+}
+.purchase .price .second a{
+    background-color: #192538;
+    color: white;
+    padding: 15px 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.purchase .price .second a:hover{
+    color: #F5C501;
+    box-shadow: rgba(0, 0, 0, 0.70) 0px 5px 15px;
+}
+
+/* home - section7 */
+.quotation{
+    height: 100vh;
+    display: flex;
+}
+.quotation .faq{
+    padding: 80px 100px ;
+    background-color: #F7FCFF;
+    width: 50%;
+}
+.quotation .faq .work .work1 h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+.quotation .faq .work .work1 p{
+    font-size: 17px;
+    margin-bottom: 40px;
+
+}
+.quotation .faq .work .work2 a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#F4C201;
+    margin: 30px 0;
+    padding: 20px ;
+    border-radius: 10px;
+    color: black;
+}
+.quotation .faq .work .work2 p{
+    padding-left: 40px;
+    line-height: 1.6;
+}
+.quotation .faq .work .work3 a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #192538;
+    margin: 30px 0;
+    padding: 20px ;
+    border-radius: 10px;
+    color: white;
+}
+.quotation .get{
+    background-color: #192538;
+    width: 50%;
+}
+.quotation .get .quote{
+    margin: 100px;
+}
+.quotation .get .quote .request{
+    text-align: center;
+    margin: 80px 0;
+}
+.quotation .get .quote .request h2{
+    color: white;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+.quotation .get .quote .request h1{
+    color:#F5C501;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+.quotation .get .quote .form{
+    display: flex;
+    margin-bottom: 30px;
+}
+.quotation .get .quote .form .left input{
+    width: 250px;
+    margin: 20px 0;
+    font-size: 15px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.quotation .get .quote .form .left input::placeholder{
+    color: white;
+}
+
+.quotation .get .quote .form .left select{
+    width: 250px;
+    margin: 20px 0;
+    font-size: 15px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.quotation .get .quote .form .left select option{
+    color: black;
+}
+.quotation .get .quote form a{
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: black;
+    background-color: #F4C201 ;
+}
+
+/* home - section8 */
+.team{
+    margin: 100px 0;
+}
+.team .meet{
+    text-align: center;
+    margin-bottom: 120px;
+    padding: 0 460px;
+}
+.team .meet h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.team .meet p{
+    margin-top: 10px;
+    line-height: 1.6;
+}
+.team .card{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 100px;
+}
+.team .card .member{
+    text-align: center;
+    margin: 35px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.70) 0px 5px 15px;
+    position: relative;
+    z-index: 1;
+}
+.team .card .member .secondHalf{
+    padding: 30px;
+}
+.team .card .member .secondHalf h2{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 8px 0;
+}
+.team .card .member .secondHalf p{
+    line-height: 1.6;
+}
+.team .card .member .firstHalf .client{
+    position: absolute;
+    top: -25%;
+    left: 25%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.70) 0px 5px 15px;
+}
+
+/* home - section9 */
+.project{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-image: linear-gradient(4deg, hsla(214, 52%, 18%, 0.34) 17%, rgba(32, 47, 83, 0) 69%), url(images/subscriber-bg.jpg);
+}
+.project .done{
+    margin: 100px 0;
+
+}
+.project .done i{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 15px;
+
+}
+.project .done h1{
+    color: #F5C501;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+/* home - section10 */
+.client .meet{
+    text-align: center;
+    margin: 100px 470px;
+}
+.client .meet p{
+    margin-top: 10px;
+    line-height: 1.6;
+}
+.client .card{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 100px;
+}
+.client .card .member{
+    text-align: center;
+    margin: 35px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.70) 0px 5px 15px;
+    position: relative;
+    z-index: 1;
+}
+.client .card .member .secondHalf{
+    padding: 10px 30px;
+}
+.client .card .member .secondHalf h2{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.client .card .member .secondHalf .star i{
+    color: #F4C201;
+    margin-bottom: 10px;
+}
+
+.client .card .member .secondHalf p{
+    line-height: 1.6;
+    margin: 10px 0;
+}
+.client .card .member .firstHalf .client1{
+    position: absolute;
+    top: -15%;
+    left: 30%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.70) 0px 5px 15px;
+}
+
+
+
+
+
+
+/* home - section11 */
+.latest{
+    height: 130vh;
+    position: relative;
+    z-index: 1;
+}
+.latest .top{
+    height: 20%;
+    text-align: center;
+    padding-top: 50px;
+}
+.latest .top h2{
+    padding-top: 40px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+.latest .top h2::before::after{
+    width: 100px;
+    height: 10px;
+    border: 2px solid black;
+}
+.latest .top p{
+    font-size: 17px;
+}
+.latest .bottom{
+    height: 80%;
+    background-image: url(images/blog-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.latest .transport{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px 100px;
+    position: absolute;
+    top: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 60px;  
+}
+.transport > div{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-color: #F7FCFF;
+}
+
+.latest .transport .transport1 .img{
+    width: 100%;
+    height: 50%;
+    background-image: url(images/post-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.latest .transport .transport2 .img{
+    width: 100%;
+    height: 50%;
+    background-image: url(images/post-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+.latest .transport .transport3 .img{
+    width: 100%;
+    height: 50%;
+    background-image: url(images/post-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s; 
+}
+.latest .transport .transport1:hover .img, .latest .transport .transport2:hover .img, .latest .transport .transport3:hover .img{
+    transform: scale(1.1);
+    
+}
+.latest .transport .transport1, .latest .transport .transport2, .latest .transport .transport3{
+    background-color: white;
+    
+}
+.latest .transport .transport1 .content, .latest .transport .transport2 .content, .latest .transport .transport3 .content{
+    text-align: justify;
+    padding: 60px 30px;
+    
+}
+.latest .transport .transport1 .content h3, .latest .transport .transport2 .content h3, .latest .transport .transport3 .content h3{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.latest .transport .transport1 p, .transport2 p, .transport3 p{
+    font-size: 17px;
+    line-height: 1.6;
+}
+.latest .transport .transport1 a, .latest .transport .transport2 a, .latest .transport .transport3 a{
+    width: 100%;
+    background-color:#F5C501;
+    position: absolute;
+    top: 290px;
+    left: 70%;
+    font-size: 20px;
+    color: black;  
+}
+.latest .transport .transport1:hover h3, .latest .transport .transport2:hover h3, .latest .transport .transport3:hover h3{
+    color: #F4C201;
+    transition: all 0.3s;
+}
+
+/* home - section12 */
+.subscribe{
+    background-image: url(images/callout-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 45%;
+}
+.subscribe form{
+    padding: 100px 200px;
+}
+.subscribe form h2{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+}
+.subscribe form input{
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin-right: 20px;
+    border: none;
+}
+.subscribe form a{
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 20px 150px;
+    width: 30%;
+    background-color: #192538;
+    color: white;
+}
+
+/* footer */
+footer{
+    background-color: #192538;
+}
+footer .foot{
+    display: flex;
+    gap: 50px;
+    padding: 100px 200px;
+    color: white;
+}
+footer .foot .info img{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+footer .foot .info .play{
+    margin-top: 30px;
+    width: 80px;
+    height: 30px;
+}
+footer .foot .info .icon{
+    display: flex;
+    margin: 10px 0;    
+}
+footer .foot .info .icon i{
+    margin: 5px 5px 0 0;
+}
+footer .foot .info p{
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+footer .foot .info h3, .links h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.links li{
+    margin: 15px 5px;
+}
+.links li a{
+    color: white;
+    transition: all 0.5s;
+}
+.links li a:hover{
+    color: #F4C201;
+}
+
+
+
+
+/* About */
+/* about -section1 */
+.aboutCompany{
+    height: 80vh;
+}
+.aboutCompany .heading{
+    height: 90%;
+    background-image: url(images/breadcrumb-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 150px;
+    
+}
+.aboutCompany .heading h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.aboutCompany .heading p{
+    font-size: 17px;
+    color: white;
+    line-height: 1.6;
+    margin: 15px 0 40px 0;
+}
+.aboutCompany .heading a{
+    color: black;
+    background-color: #F4C201;
+    font-size: 18px;
+    padding: 20px 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.aboutCompany .head{
+    height: 8%;
+    background-image: linear-gradient(130deg, #F4C201 60%, #192538 40%);
+    padding: 10px 200px ;
+    font-weight: bold;
+    color: black;
+}
+.aboutCompany .head a{
+    color: black;
+    transition: all 0.4s;
+}
+.aboutCompany .head a:hover{
+    color: gray;
+}
+
+/* about -section2 */
+.about{
+    height: 100vh;
+    background-image: url(images/about-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.about .faq{
+    margin: 40px;
+    padding: 80px 100px ;
+}
+.about .faq .work .work1 h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.about .faq .work .work1 p{
+    font-size: 17px;
+    margin-bottom: 40px;
+
+}
+.about .faq .work .work2 a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#F4C201;
+    margin: 30px 0;
+    padding: 20px ;
+    border-radius: 10px;
+    color: black;
+}
+.about .faq .work .work2 p{
+    padding-left: 30px;
+    line-height: 1.6;
+}
+.about .faq .work .work3 a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #192538;
+    margin: 30px 0;
+    padding: 20px ;
+    border-radius: 10px;
+    color: white;
+}
+.about .about2 img{
+    margin: 150px 80px 0 0;
+    animation: bounce 3s infinite ease-in-out;
+}
+
+/* about -section3 */
+.who{
+    height: 100vh;
+    background-image: url(images/who-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 0 100px;
+}
+.who .are, .frame{
+    width: 50%;
+    margin: 100px 40px 0 40px;
+}
+.who .are p{
+    margin: 20px 0;
+    line-height: 1.6;
+    letter-spacing: 1.4px;
+}
+.frame iframe{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.frame{
+    height: 60%;
+    background: #f9df66;
+}
+
+/* about -section4 */
+.amazing{
+    height: 120vh;
+}
+.amazing .ourService{
+    padding-top: 100px;
+    text-align: center;
+    margin: 0 470px;
+}
+.amazing .ourService p{
+    line-height: 1.6;
+    padding: 10px 0;
+}
+.amazing .boxes{
+    display: flex;
+    margin: 40px;
+    padding: 0 150px;
+}
+
+.amazing .boxes .box .cargo .image img{
+    width: 100px;
+    height: 80px;
+    margin-right: 22px;
+    border-right: 3px solid;
+    padding-right: 20px;
+}
+.amazing .boxes .box .cargo{
+    display: flex;
+    margin: 30px 20px;
+    padding: 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+
+}
+.amazing .boxes .box .cargo .para p{
+    margin-top: 10px;
+    line-height: 1.5;
+
+}
+
+/* about -section5 */
+.free .pic{
+    width: 50%;
+    height: 100%;
+    background-image: url(images/about-faq.jpg);
+    background-position: center;
+}
+
+.free{
+    height: 100vh;
+    display: flex;
+}
+
+.free .get{
+    background-color: #192538;
+    width: 50%;
+}
+.free .get .quote{
+    margin: 100px;
+}
+.free .get .quote .request{
+    text-align: center;
+    margin: 80px 0;
+}
+.free .get .quote .request h2{
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.free .get .quote .request h1{
+    color:#F5C501;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.free .get .quote .form{
+    display: flex;
+    margin-bottom: 30px;
+}
+.free .get .quote .form .left input{
+    width: 250px;
+    margin: 20px 0;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.free .get .quote .form .left input::placeholder{
+    color: white;
+}
+.free .get .quote .form .left select{
+    width: 250px;
+    margin: 20px 0;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.free .get .quote .form .left select option{
+    color: black;
+}
+
+.free .get .quote form a{
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: black;
+    background-color: #F4C201 ;
+}
+
+/* about -section6 */
+.tracking{
+    height: 100vh;
+    background-color: #FFBA42;
+}
+.tracking .store{
+    display: flex;
+    height: 100%;
+}
+.tracking .store .mobile{
+    width: 22%;
+    height: 85%;
+    margin: auto;
+    border: 10px solid black;
+    border-radius: 33px;
+    background-image: url(images/home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-size: 100% auto;
+    cursor: pointer;
+    transition: background-position 5s linear;
+
+}
+.tracking .store .app{
+    width: 60%;
+}
+.tracking .store .app h1{
+    font-size: 70px;
+    margin-top: 120px;
+}
+.tracking .store .app p{
+    line-height: 1.6;
+    margin: 20px 210px 30px 0;
+}
+.tracking .store .app .img {
+    display: flex;
+}
+.tracking .store .app .img img{
+    width: 150px;
+    height: 50px;
+    margin: 20px 10px 0 0 ;
+}
+
+
+
+
+
+
+
+/* about -section10 */
+.latestService{
+    height: 220vh;
+    position: relative;
+    z-index: 1;
+}
+.latestService .top{
+    height: 20%;
+    text-align: center;
+    padding-top: 50px;
+}
+.latestService .top h2{
+    padding-top: 40px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.latestService .top p{
+    font-size: 17px;
+}
+.latestService .bottom{
+    height: 80%;
+    background-image: url(images/blog-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.latestService .transport{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px 100px;
+    position: absolute;
+    top: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 60px;   
+}
+.transport > div{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-color: #F7FCFF;
+}
+
+.latestService .transport .transport1 .img{
+    width: 100%;
+    height: 50%;
+    background-image: url(images/post-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.latestService .transport .transport2 .img{
+    width: 100%;
+    height: 50%;
+    background-image: url(images/post-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+.latestService .transport .transport3 .img{
+    width: 100%;
+    height: 50%;
+    background-image: url(images/post-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s; 
+}
+.latestService .transport .transport1:hover .img, .latestService .transport .transport2:hover .img, .latestService .transport .transport3:hover .img{
+    transform: scale(1.1);
+    
+}
+.latestService .transport .transport1, .latestService .transport .transport2, .latestService .transport .transport3{
+    background-color: white;
+    
+}
+.latestService .transport .transport1 .content, .latestService .transport .transport2 .content, .latestService .transport .transport3 .content{
+    text-align: justify;
+    padding: 60px 30px;
+    
+}
+.latestService .transport .transport1 .content h3, .latestService .transport .transport2 .content h3, .latestService .transport .transport3 .content h3{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.latestService .transport .transport1 p, .transport2 p, .transport3 p{
+    font-size: 17px;
+    line-height: 1.6;
+}
+.latestService .transport .transport1 a, .latestService .transport .transport2 a, .latestService .transport .transport3 a{
+    width: 100%;
+    background-color:#F5C501;
+    position: absolute;
+    top: 290px;
+    left: 70%;
+    font-size: 20px;
+    color: black;  
+}
+.latestService .transport .transport1:hover h3, .latest .transport .transport2:hover h3, .latest .transport .transport3:hover h3{
+    color: #F4C201;
+    transition: all 0.3s;
+}
+
+
+
+/* service */
+/* service - section3 */
+.give{
+    height: 120vh;
+    background-image: url(images/best-ser-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.give .top{
+    height: 20%;
+    text-align: center;
+    padding-top: 50px;
+}
+.give .top h2{
+    padding-top: 40px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.give .top p{
+    font-size: 17px;
+}
+.give .best{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 80px 200px;
+}
+
+.give .best .card{
+    border: 1px solid grey;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    
+    transition: all 0.6s;
+}
+.give .best .card p{
+    margin-top: 15px;
+    letter-spacing: 1.6px;
+}
+.give .best img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.give .best .card:hover{
+    background-color: #F4C201;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+/* service -section4 */
+.about iframe{
+    width: 100%;
+    margin: 150px 100px 100px 0;
+}
+
+/* service -section6 */
+.grid{
+    height: 120vh;
+}
+.grid .best > div h3{
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.737) , rgba(0, 0, 0, 0.737) );
+    color: white;
+    font-size: 25px;
+    text-align: bottom;
+    /* background-color: red; */
+    /* text-align: center; */
+    padding-top: 80px;
+    position: absolute;
+  
+    top: -140px;
+    
+}
+.grid .best > div p{
+    height: 50%;
+    /* background-color: blue; */
+    /* text-align: center; */
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.737) , rgba(0, 0, 0, 0.737) );
+
+    padding-top: 10px;
+    position: absolute;
+    bottom: -140px;
+    color: white;
+}
+.grid .top{
+    height: 20%;
+    text-align: center;
+    padding-top: 50px;
+}
+.grid .top h2{
+    padding-top: 40px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.grid .top p{
+    font-size: 17px;
+}
+.grid .best{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin:  20px;
+
+}
+.grid .best > div{
+    width: 280px;
+    height: 280px;
+    border: 1px solid;
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+    /* overflow: hidden; */
+
+}
+
+.grid .best > div h3, .grid .best > div p{
+    display: none;
+    /* opacity: 0; */
+    /* transform: translateY(-280%); */
+    /* transition: opacity 0.3s ease, transform 0.3s ease; */
+}
+.grid .best > div:hover p{
+    background-color: linear-gradient(120deg, rgba(0, 0, 0, 0.737) 65%, rgba(0, 0, 0, 0) 25%);
+
+    /* display: block;
+    position: absolute;
+
+    top: 50%; */
+    /* opacity: 1; */
+    display: block;
+    top: 50%;
+    /* transform: translateY(-140px); */
+}
+.grid .best > div:hover h3{
+    background-color: linear-gradient(120deg, rgba(0, 0, 0, 0.737) 65%, rgba(0, 0, 0, 0) 25%);
+
+    /* display: block;
+    position: absolute;
+    top: 0; */
+    display: block;
+    /* opacity: 1; */
+    top: 0;
+    /* transform: translateY(0); */
+
+    /* transform: translateY(-378%); */
+}
+
+/* .grid .best > div h3{
+
+} */
+.grid .best .grid1{
+    background-image: url(images/gallery1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid .best .grid2{
+    background-image: url(images/gallery2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid .best .grid3{
+    background-image: url(images/gallery3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid .best .grid4{
+    background-image: url(images/gallery4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid .best .grid5{
+    background-image: url(images/gallery5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid .best .grid6{
+    background-image: url(images/gallery6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid .best .grid7{
+    background-image: url(images/gallery7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid .best .grid8{
+    background-image: url(images/gallery8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid .best .grid9{
+    background-image: url(images/gallery9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid .best .grid10{
+    background-image: url(images/gallery10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+/* location */
+/* location -section2 */
+.location{
+    height: 100vh;
+}
+.location .our{
+    margin: 100px 750px 100px 220px ;
+}
+.location .our p{
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.location .find{
+    display: flex;
+    height: 60%;
+}
+.location .find .map{
+    width: 40%;
+    height: 90%;
+    margin: 0 30px;
+}
+.location .find .map img{
+    width: 100%;
+    height: 100%;
+}
+.location .find .city{
+    width: 40%;
+    background-color:#F4C201;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+.location .find .city form .title{
+    background-image: url(images/loc-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 10px 0;
+    margin: 20px 80px;
+    font-weight: bold;
+}
+.location .find .city form select{
+    border: none;
+    font-size: 18px;
+    width: 40%;
+    margin: 25px 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.location .find .city form input{
+    border: none;
+    font-size: 18px;
+    width: 40%;
+    margin: 10px 20px 70px 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+.location .find .city form a{
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 80px;
+    border-radius: 10px;
+    background-color:#192538;
+    color: white;
+}
+.location .find .city::after{
+    content: url(images/loc-man.png);
+    position: absolute;
+    right: -235px;
+    bottom: 120px;
+}
+
+/* location -section3 */
+.official{
+    height: 70vh;
+    background-image: url(images/who-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.official .branch{
+    margin: 40px 200px;
+}
+.official .branch p{
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+.official .angels{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 40px 200px;
+}
+.official .angels .loss{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 20px;
+}
+
+.official .angels .loss .first{
+    display: flex;
+    justify-content: space-between;
+}
+.official .angels .loss .first .on{
+    display: flex;
+}
+.official .angels .loss .second{
+    display: flex;
+    margin: 10px 0;
+}
+
+
+
+/* contact */
+/* contact - section2 */
+.expert{
+    display: flex;
+    height: 100vh;
+}
+.expert .message .lorem{
+    display: flex;
+}
+.expert .message{
+    width: 55%;
+    padding: 100px 30px 100px 200px;
+}
+.expert .send{
+    background-color:#F4C201;
+    width: 45%;
+    margin: 180px 200px 50px 0;
+    border-radius: 10px;
+    position: relative;
+}
+.expert .message .ques h4{
+    margin: 20px 0;
+}
+.expert .message .ques p{
+    line-height: 1.4;
+    letter-spacing: 1.1px;
+}
+.expert .message .lorem{
+    margin: 10px 230px 20px 0;
+    background-color: #F7FCFF;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+.expert .message .lorem i{
+    padding-top: 10px;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.expert .message .logo{
+    background-color: #F4C201;
+    margin: 10px 230px 20px 0;
+    padding: 15px 50px;
+    border-radius: 10px;
+}
+.expert .message .logo i{
+    font-size: 25px;
+    padding: 0 20px;
+}
+.expert .send form .contact{
+    position: absolute;
+    left: 35%;
+    top: -3%;
+    background-color: #192538;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.expert .send form h2{
+    text-align: center;
+    margin-top: 60px;
+}
+.expert .send form input{
+    margin: 20px 50px;
+    width: 75%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+}
+.expert .send form .send{
+    background-color: #192538;
+    margin: 220px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* contact -section3 */
+.code iframe{
+    width: 100%;
+}
+
+
+
+
+/* Blog section */
+.aircraft{
+    height: 400vh;
+}
+
+.aircraft .transportation .div1  {
+    width: 65%;
+
+}
+.aircraft .transportation .div1 .paragraph{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5) ), url(images/mid-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 80px 60px;
+    color: white;
+}
+.aircraft .transportation .div1 .paragraph p{
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 17px;
+}
+.aircraft .transportation .div1 .hello{
+    margin: 20px;
+    border-left: 5px solid;
+}
+.aircraft .transportation .div1 .hello p{
+    line-height: 1.6;
+    font-size: 17px;
+    padding: 0 20px;
+}
+.aircraft .transportation{
+    margin: 80px 220px;
+    display: flex;
+
+}
+.aircraft .transportation .div1 .great{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 10px solid;
+}
+
+.aircraft .transportation .div1 .great .great1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.aircraft .transportation .div1 .great .great2{
+    height: 50%;
+    padding: 35px 20px;
+    position: relative;
+    z-index: 1;
+}
+.aircraft .transportation .div1 .great .great2 h2{
+    text-transform: uppercase;
+    
+}
+.aircraft .transportation .div1 .great .great2 .on {
+    display: flex;
+    margin: 20px 0;
+}
+.aircraft .transportation .div1 .great .great2 .on .admin{
+    display: flex;
+    margin-right: 10px;
+    border-right: 1px solid;
+    padding: 0 10px 0 0;
+}
+
+.aircraft .transportation .div1 .great .great2 .on .like{
+    display: flex;
+    margin-right: 10px;
+    border-right: 1px solid;
+    padding: 0 10px 0 0;
+}
+.aircraft .transportation .div1 .great .great2 .on .comments{
+    display: flex;
+    margin-right: 10px;
+    border-right: 1px solid;
+    padding: 0 10px 0 0;
+}
+.aircraft .transportation .div1 .great .great2 .on .share{
+    display: flex;
+    margin-right: 10px;
+}
+.aircraft .transportation .div1 .great .great2 .on .admin i, .like i, .comments i, .share i{
+    padding: 0 5px;
+}
+.aircraft .transportation .div1 .great .great2 .on .icon i{
+    margin: 0 10px;
+}
+.aircraft .transportation .div1 .great .great2 .para p{
+    margin: 20px 0;
+    line-height: 1.6;
+    letter-spacing: normal;
+    font-size: 17px;
+
+}
+.aircraft .transportation .div1 .great .great2 a{
+    font-size: 18px;
+    background-color:#F5C501;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0 40px 0 0;
+    position: absolute;
+    left: 0;
+}
+.aircraft .transportation .categories{
+    width: 35%;
+}
+
+
+.categories .searchform{
+    display: flex;
+    margin: 0 30px;
+}
+.categories .searchform input{
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid grey;
+}
+.categories .searchform button{
+    background-color:#192538;
+    padding: 15px 40px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    right: 242px;
+    bottom: -132px;
+}
+
+.categories .building{
+    margin: 40px 0 40px 30px;
+    padding: 40px 0 30px 20px;  
+    border: 1px solid;
+    border-radius: 10px;
+    border-bottom: 10px solid;
+    background-color: #F7F7F7;
+}
+.categories .building .seo{
+    margin: 30px 0;
+}
+.categories .building .seo a i{
+    color: #F4C201;
+}
+.categories .building .seo a span{
+    padding: 0 10px;
+    color: #525252;
+}
+
+.categories .news{
+    margin: 40px 0 40px 30px;
+    padding: 40px 0 30px 20px;  
+    border: 1px solid;
+    border-radius: 10px;
+    border-bottom: 10px solid;
+    background-color: #F7F7F7;
+}
+.categories .news .port{
+    display: flex;
+    margin: 30px 0;
+}
+.categories .news .port img{
+    width: 80px;
+    height: 50px;
+    
+}
+.categories .news .port .lorem{
+    padding: 5px 15px;
+}
+.categories .news .port .lorem p{
+    font-size: 15px;
+    color: #525252;
+    margin-top: 5px;
+}
+.categories .tags{
+    margin: 40px 0 40px 30px;
+    padding: 40px 0 30px 20px;  
+    border: 1px solid;
+    border-radius: 10px;
+    border-bottom: 10px solid;
+    background-color: #F7F7F7;
+}
+.categories .tags .trending{
+    margin: 30px 0;
+}
+.categories .tags .trending a{
+    display: inline-block;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    margin: 10px 5px;
+    color: black;
+    transition: all 0.5s;
+}
+.categories .tags .trending a:hover{
+    background-color: #F4C201;
+}
+.categories .company{
+    margin: 40px 0 40px 30px;
+    padding: 40px 0 30px 20px;  
+    border: 1px solid;
+    border-radius: 10px;
+    border-bottom: 10px solid;
+    background-color: #F7F7F7;
+}
+.categories .company .on{
+    margin: 20px 10px;
+    padding: 0 40px;
+}
+.categories .company .on a{
+    padding: 10px 40px;
+    margin: 5px;
+    display: inline-block;
+    color: white;
+}
+.categories .agent{
+    text-align: center;
+    margin: 40px 0 0 30px;
+    padding: 40px 0;  
+    border: 1px solid;
+    border-radius: 10px;
+    border-bottom: 10px solid;
+    background-color: #F7F7F7;
+}
+.categories .agent .call .group{
+    display: flex;
+    margin: 20px;
+}
+.categories .agent .call .group input{
+    padding-left: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+.categories .agent .call .group a{
+    background-color:#192538;
+    padding: 8px 20px;
+    font-size: 17px;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid;
+}
+.categories .agent .call img{
+    width: 150px;
+    height: 120px;
+    margin-top: 40px;
+}
+.categories .agent .call h1{
+    color: #192538;
+    margin-top: 20px;
+}
